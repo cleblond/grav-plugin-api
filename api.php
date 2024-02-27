@@ -87,9 +87,9 @@ class ApiPlugin extends Plugin
         if (isset($e['admin'])) {
             $permissions = [];
 
-            foreach (Constants::ROLES as $role) {
-                $permissions[$role] = 'boolean';
-            }
+            //foreach (Constants::ROLES as $role) {
+            //    $permissions[$role] = 'boolean';
+            //}
 
             $e['admin']->addPermissions($permissions);
         }
